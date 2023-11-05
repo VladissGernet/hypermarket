@@ -30,13 +30,13 @@
         </a>
       </li>
     </ul>
-    <a class="header__tel" href="tel:+799966577866">
-      +7 (999) 665 778 66
-    </a>
-    <a class="header__order-link" href="#">
-      Заказать рекламное место
-    </a>
   </nav>
+  <a class="header__tel" href="tel:+799966577866">
+    +7 (999) 665 778 66
+  </a>
+  <a class="header__order-link" href="#">
+    Заказать рекламное место
+  </a>
 </header>
 <main>
   <h1 class="visually-hidden">
@@ -49,36 +49,43 @@
     <p class="promo__slogan">
       Популярный сегмент, гибкие цены
     </p>
+    <img class="promo__image" src="img/promo/promo-img.png" width="679" height="361"
+         alt="Местоположение вашей рекламы на нашем сайте.">
     <form class="promo__form" method="post" enctype="multipart/form-data" action="#" autocomplete="off">
       <label class="visually-hidden" for="promo__input">
-        Введите номер телефона.
+        Номер телефона.
       </label>
-      <input class="promo__input" type="tel" id="promo__input" name="promo__input">
+      <span>+7</span>
+      <input class="promo__input" type="tel" id="promo__input" name="promo__input" placeholder="(999) 999-9999">
       <button class="promo__submit" type="submit">
         Заказать
       </button>
-      <img class="promo__image" src="img/promo/promo-img.png" width="679" height="361"
-           alt="Местоположение вашей рекламы на нашем сайте.">
     </form>
   </section>
   <section class="features">
     <h2 class="features__title">
       Почему вам стоит купить рекламное место на нашем сайте?
     </h2>
-    <p class="features__background-word">
-      Почему
-    </p>
-    <ul class="features__list">
-      <li class="features__item">
-        <span class="features__item-main-word">Более 100 000</span>посетителей в месяц
-      </li>
-      <li class="features__item">
-        <span class="features__item-main-word">Более 25 000</span>проданных товаров в месяц
-      </li>
-      <li class="features__item">
-        <span class="features__item-main-word">Более 200 000</span>просмотров в месяц
-      </li>
-    </ul>
+    <dl class="features__list">
+      <dt class="features__term">
+        посетителей в месяц
+      </dt>
+      <dd class="features__data">
+        Более 100 000
+      </dd>
+      <dt class="features__term">
+        проданных товаров в месяц
+      </dt>
+      <dd class="features__data">
+        Более 25 000
+      </dd>
+      <dt class="features__term">
+        просмотров в месяц
+      </dt>
+      <dd class="features__data">
+        Более 200 000
+      </dd>
+    </dl>
     <dl class="features__statistics">
       <dt class="features__statistics-term">
         Крупных городов РФ
@@ -136,61 +143,56 @@
     </h2>
     <ul class="indicators__list">
       <li class="indicators__item">
-        <button class="indicators__item-button" type="button">
+        <a class="indicators__item-button" href="#">
           Все города
-        </button>
+        </a>
       </li>
       <li class="indicators__item">
-        <button class="indicators__item-button" type="button">
+        <a class="indicators__item-button" href="#">
           Екатеринбург
-        </button>
+        </a>
       </li>
       <li class="indicators__item">
-        <button class="indicators__item-button" type="button">
+        <a class="indicators__item-button" href="#">
           Санкт-Петербург
-        </button>
+        </a>
       </li>
       <li class="indicators__item">
-        <button class="indicators__item-button" type="button">
+        <a class="indicators__item-button" href="#">
           Новосибирск
-        </button>
+        </a>
       </li>
       <li class="indicators__item">
-        <button class="indicators__item-button" type="button">
+        <a class="indicators__item-button" href="#">
           Самара
-        </button>
+        </a>
       </li>
     </ul>
-    <fieldset class="indicators__statistics">
-      <legend class="indicators__statistics-title">
+    <section class="indicators__statistics">
+      <h3 class="indicators__statistics-title">
         Возраст пользователей
-      </legend>
+      </h3>
       <p class="indicators__statistic-wrapper">
-        <span class="indicators__statistic-name">18‑24 года</span>
-        <label for="18-24">9%</label>
-        <progress id="18-24" max="100" value="9">9%</progress>
+        <label for="18-24-years">18‑24 года</label>
+        <meter id="18-24-years" min="0" max="100" value="9">9%</meter>9%
       </p>
       <p class="indicators__statistic-wrapper">
-        <span class="indicators__statistic-name">25‑34 года</span>
-        <label for="25-34">40%</label>
-        <progress id="25-34" max="100" value="40">40%</progress>
+        <label for="25‑34-years">25‑34 года</label>
+        <meter id="25‑34-years" min="0" max="100" value="40">40%</meter>40%
       </p>
       <p class="indicators__statistic-wrapper">
-        <span class="indicators__statistic-name">35‑44 года</span>
-        <label for="35‑44">23%</label>
-        <progress id="35‑44" max="100" value="23">23%</progress>
+        <label for="35‑44-years">35‑44 года</label>
+        <meter id="35‑44-years" min="0" max="100" value="23">23%</meter>23%
       </p>
       <p class="indicators__statistic-wrapper">
-        <span class="indicators__statistic-name">45-54 года</span>
-        <label for="45-54">15%</label>
-        <progress id="45-54" max="100" value="15">15%</progress>
+        <label for="45-54-years">45-54 года</label>
+        <meter id="45-54-years" min="0" max="100" value="15">15%</meter>15%
       </p>
       <p class="indicators__statistic-wrapper">
-        <span class="indicators__statistic-name">55 лет и старше</span>
-        <label for="55">12%</label>
-        <progress id="55" max="100" value="12">12%</progress>
+        <label for="55-years">55 лет и старше</label>
+        <meter id="55-years" min="0" max="100" value="12">12%</meter>12%
       </p>
-    </fieldset>
+    </section>
     <dl class="indicators__views-list">
       <dt class="indicators__views-item-name">
         среднее время пребывания на сайте
@@ -211,18 +213,22 @@
         26,16%
       </dd>
     </dl>
-    <form class="indicators__form" method="post" enctype="multipart/form-data" action="#" autocomplete="off">
-      <p class="indicators__form-text">
+    <section class="indicators__order">
+      <h3 class="indicators__order-title">
         Заказать рекламу в этом городе
-      </p>
-      <label class="visually-hidden" for="indicators__input">
-        Введите номер телефона.
-      </label>
-      <input class="indicators__input" type="tel" id="indicators__input" name="indicators__input">
-      <button class="indicators__submit" type="submit">
-        Заказать
-      </button>
-    </form>
+      </h3>
+      <form class="indicators__form" method="post" enctype="multipart/form-data" action="#" autocomplete="off">
+        <label class="visually-hidden" for="indicators__input">
+          Номер телефона.
+        </label>
+        <span>+7</span>
+        <input class="indicators__input" type="tel" id="indicators__input" name="indicators__input"
+               placeholder="(999) 999-9999">
+        <button class="indicators__submit" type="submit">
+          Заказать
+        </button>
+      </form>
+    </section>
   </section>
   <section class="rating">
     <h2 class="rating__title">
@@ -361,13 +367,11 @@
       Заказать рекламное место
     </h2>
     <form class="order__form" method="post" enctype="multipart/form-data" action="#" autocomplete="off">
-      <p class="order__form-text">
-        Заказать рекламу в этом городе
-      </p>
       <label class="visually-hidden" for="order__input">
-        Введите номер телефона.
+        Номер телефона.
       </label>
-      <input class="order__input" type="tel" id="order__input" name="order__input">
+      <span>+7</span>
+      <input class="order__input" type="tel" id="order__input" name="order__input" placeholder="(999) 999-9999">
       <button class="order__submit" type="submit">
         Заказать
       </button>
